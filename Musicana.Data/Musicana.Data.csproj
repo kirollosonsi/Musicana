@@ -40,6 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Domain\Album.cs" />
+    <Compile Include="Core\Domain\Artist.cs" />
+    <Compile Include="Core\Domain\ArtistSong.cs" />
+    <Compile Include="Core\Domain\Author.cs" />
+    <Compile Include="Core\Domain\Genre.cs" />
+    <Compile Include="Core\Domain\MusicanaEntities.cs" />
+    <Compile Include="Core\Domain\Order.cs" />
+    <Compile Include="Core\Domain\OrderDetail.cs" />
+    <Compile Include="Core\Domain\Song.cs" />
+    <Compile Include="Core\Repositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistance\Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

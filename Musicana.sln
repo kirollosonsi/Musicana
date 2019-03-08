@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Musicana.Data", "Musicana.Data\Musicana.Data.csproj", "{933E73FD-8A2A-46DD-ABD1-EE4330B0926D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Musicana.Web", "Musicana.Web\Musicana.Web.csproj", "{7463747E-160F-4B42-A36E-374F28F9C1EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{933E73FD-8A2A-46DD-ABD1-EE4330B0926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{933E73FD-8A2A-46DD-ABD1-EE4330B0926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{933E73FD-8A2A-46DD-ABD1-EE4330B0926D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7463747E-160F-4B42-A36E-374F28F9C1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7463747E-160F-4B42-A36E-374F28F9C1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7463747E-160F-4B42-A36E-374F28F9C1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7463747E-160F-4B42-A36E-374F28F9C1EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
