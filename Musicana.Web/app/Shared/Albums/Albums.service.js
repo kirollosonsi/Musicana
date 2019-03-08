@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
-var AlbumsService = (function () {
+var AlbumsService = /** @class */ (function () {
     function AlbumsService(_http) {
         this._http = _http;
     }
@@ -25,11 +26,11 @@ var AlbumsService = (function () {
             { id: 4, name: "bnm", price: 45.34, pic: "wer wer wer", discount: .1, description: "fdsg dfg" },
             { id: 5, name: "hjk", price: 67.56, pic: "d fgdf gdfg ", discount: .1, description: "fdsg dfg" }];
     };
+    AlbumsService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], AlbumsService);
     return AlbumsService;
 }());
-AlbumsService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], AlbumsService);
 exports.AlbumsService = AlbumsService;
 //# sourceMappingURL=Albums.service.js.map

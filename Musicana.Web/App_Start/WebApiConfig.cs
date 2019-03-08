@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace Musicana.Web
@@ -10,7 +11,10 @@ namespace Musicana.Web
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            config.Formatters.Clear();
+            config.Formatters.Add(new JsonMediaTypeFormatter());
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            config.Formatters.JsonFormatter.Indent = true;
             // Web API routes
             config.MapHttpAttributeRoutes();
 

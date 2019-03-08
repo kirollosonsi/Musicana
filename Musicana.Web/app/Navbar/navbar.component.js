@@ -8,19 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var NavbarComponent = (function () {
+var NavbarComponent = /** @class */ (function () {
     function NavbarComponent() {
     }
     NavbarComponent.prototype.ngOnInit = function () { };
+    NavbarComponent = __decorate([
+        core_1.Component({
+            selector: 'navbar-musicana',
+            templateUrl: './app/navbar/navbar.html'
+        }),
+        __metadata("design:paramtypes", [])
+    ], NavbarComponent);
     return NavbarComponent;
 }());
-NavbarComponent = __decorate([
-    core_1.Component({
-        selector: 'navbar-musicana',
-        templateUrl: './app/navbar/navbar.html'
-    }),
-    __metadata("design:paramtypes", [])
-], NavbarComponent);
 exports.NavbarComponent = NavbarComponent;
 //# sourceMappingURL=navbar.component.js.map

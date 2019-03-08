@@ -8,28 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AlbumComponent = (function () {
+var AlbumComponent = /** @class */ (function () {
     function AlbumComponent() {
     }
     AlbumComponent.prototype.ngOnInit = function () { };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Array)
+    ], AlbumComponent.prototype, "album", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Object)
+    ], AlbumComponent.prototype, "albumHttp", void 0);
+    AlbumComponent = __decorate([
+        core_1.Component({
+            selector: 'album-musicana',
+            templateUrl: './app/album/album.html',
+            styleUrls: ["./app/album/album.css"]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AlbumComponent);
     return AlbumComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Array)
-], AlbumComponent.prototype, "album", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], AlbumComponent.prototype, "albumHttp", void 0);
-AlbumComponent = __decorate([
-    core_1.Component({
-        selector: 'album-musicana',
-        templateUrl: './app/album/album.html',
-        styleUrls: ["./app/album/album.css"]
-    }),
-    __metadata("design:paramtypes", [])
-], AlbumComponent);
 exports.AlbumComponent = AlbumComponent;
 //# sourceMappingURL=album.component.js.map

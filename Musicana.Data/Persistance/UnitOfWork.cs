@@ -13,7 +13,7 @@ namespace Musicana.Data.Persistance
 {
     public class UnitOfWork : IUnitOfWork
     {
-        DbContext _ctx;
+        private readonly DbContext _ctx;
 
         public UnitOfWork(DbContext ctx)
         {

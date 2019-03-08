@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var Albums_service_1 = require("./Shared/Albums/Albums.service");
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent(albumService) {
         this.albumService = albumService;
         this.today = new Date();
@@ -18,15 +19,15 @@ var AppComponent = (function () {
         // this.albumsHttp = albumService.getAlbumsHttp().subscribe(data => {console.log(data)});
     }
     AppComponent.prototype.ngOnInit = function () { };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'app-root',
+            templateUrl: './app/app.html',
+            providers: [Albums_service_1.AlbumsService]
+        }),
+        __metadata("design:paramtypes", [Albums_service_1.AlbumsService])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'app-root',
-        templateUrl: './app/app.html',
-        providers: [Albums_service_1.AlbumsService]
-    }),
-    __metadata("design:paramtypes", [Albums_service_1.AlbumsService])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
