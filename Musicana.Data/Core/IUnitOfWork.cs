@@ -8,7 +8,7 @@ using Musicana.Data.Core.Repositories;
 
 namespace Musicana.Data.Core
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         IAlbumRepository Albums { get; set; }
         IArtsistRepository Atrists { get; set; }

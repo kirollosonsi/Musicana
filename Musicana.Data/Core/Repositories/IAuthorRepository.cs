@@ -7,7 +7,7 @@ using Musicana.Data.Core.Domain;
 
 namespace Musicana.Data.Core.Repositories
 {
-    internal interface IAuthorRepository: IRepository<Author>
+    public interface IAuthorRepository: IRepository<Author>
     {
     }
 }

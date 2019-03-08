@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Musicana.Data.Core.Repositories
 {
-    internal interface IArtistSongRepository:IRepository<ArtistSong>
+    public interface IArtistSongRepository:IRepository<ArtistSong>
     {
     }
 }

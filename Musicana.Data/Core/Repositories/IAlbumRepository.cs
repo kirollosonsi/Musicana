@@ -7,7 +7,7 @@ using Musicana.Data.Core.Domain;
 
 namespace Musicana.Data.Core.Repositories
 {
-    internal interface IAlbumRepository:IRepository<Album>
+    public interface IAlbumRepository:IRepository<Album>
     {
     }
 }

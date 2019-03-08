@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Musicana.Data.Core.Repositories
 {
-    interface IOrderDetailRepository:IRepository<OrderDetail>
+    public interface IOrderDetailRepository:IRepository<OrderDetail>
     {
     }
 }

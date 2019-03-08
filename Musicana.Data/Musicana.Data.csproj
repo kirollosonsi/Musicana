@@ -69,7 +69,16 @@
     <Compile Include="Core\Repositories\IOrderRepository.cs" />
     <Compile Include="Core\Repositories\IRepository.cs" />
     <Compile Include="Core\Repositories\ISongRepository.cs" />
+    <Compile Include="Persistance\Repositories\AlbumRepository.cs" />
+    <Compile Include="Persistance\Repositories\ArtistRepository.cs" />
+    <Compile Include="Persistance\Repositories\ArtistSongRepository.cs" />
+    <Compile Include="Persistance\Repositories\AuthorRepository.cs" />
+    <Compile Include="Persistance\Repositories\GenreRepository.cs" />
+    <Compile Include="Persistance\Repositories\OrderDetailRepository.cs" />
+    <Compile Include="Persistance\Repositories\OrderRepository.cs" />
     <Compile Include="Persistance\Repositories\Repository.cs" />
+    <Compile Include="Persistance\Repositories\SongRepsitory.cs" />
+    <Compile Include="Persistance\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
