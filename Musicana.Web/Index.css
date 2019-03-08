@@ -1,0 +1,10 @@
+nav.navbar-inverse{
+    margin-bottom: 0px;
+    background-color: #660066;
+    border :none;
+    }
+div.navbar-inverse{
+    background-color: #660066;
+    border-radius: 0px 0px 10px 10px;
+    border :none;
+}

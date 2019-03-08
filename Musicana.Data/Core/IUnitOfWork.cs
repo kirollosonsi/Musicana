@@ -10,13 +10,13 @@ namespace Musicana.Data.Core
 {
     public interface IUnitOfWork
     {
-        IAlbumRepository Albums { get; set; }
-        IArtsistRepository Atrists { get; set; }
-        IArtistSongRepository ArtistSongs { get; set; }
-        IAuthorRepository Authors { get; set; }
-        IGenreRepository Genres { get; set; }
-        IOrderDetailRepository OrderDetails { get; set; }
-        IOrderRepository Orders { get; set; }
-        ISongRepository Songs { get; set; }
+        IAlbumRepository Albums { get; }
+        IArtsistRepository Atrists { get; }
+        IArtistSongRepository ArtistSongs { get; }
+        IAuthorRepository Authors { get; }
+        IGenreRepository Genres { get; }
+        IOrderDetailRepository OrderDetails { get; }
+        IOrderRepository Orders { get; }
+        ISongRepository Songs { get; }
     }
 }

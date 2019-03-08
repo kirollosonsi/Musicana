@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -23,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -107,7 +109,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Album\album.component.js" />
+    <Content Include="app\Album\album.css" />
+    <Content Include="app\Album\album.html" />
+    <Content Include="app\app.component.js" />
+    <Content Include="app\app.html" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\main.js" />
+    <Content Include="app\Menu\Menu.Component.js" />
+    <Content Include="app\Menu\Menu.html" />
+    <Content Include="app\Navbar.Component\navbar.component.js" />
+    <Content Include="app\Navbar\navbar.component.js" />
+    <Content Include="app\Navbar\navbar.html" />
+    <Content Include="app\Shared\Albums\Album.js" />
+    <Content Include="app\Shared\Albums\Albums.service.js" />
+    <Content Include="app\Slider\slider.component.js" />
+    <Content Include="app\Slider\slider.html" />
+    <Content Include="assets\Images\1.jpg" />
+    <Content Include="assets\Images\2.jpg" />
+    <Content Include="assets\Images\3.jpg" />
+    <Content Include="assets\Images\pace.png" />
     <Content Include="Global.asax" />
+    <Content Include="Index.css" />
+    <Content Include="index.html" />
+    <Content Include="jquery-3.3.1.min.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -116,11 +142,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="app\Album\album.component.js.map" />
+    <Content Include="app\app.component.js.map" />
+    <Content Include="app\app.module.js.map" />
+    <Content Include="app\main.js.map" />
+    <Content Include="app\Menu\Menu.Component.js.map" />
+    <Content Include="app\Navbar.Component\navbar.component.js.map" />
+    <Content Include="app\Navbar\navbar.component.js.map" />
+    <Content Include="app\Shared\Albums\Album.js.map" />
+    <Content Include="app\Shared\Albums\Albums.service.js.map" />
+    <Content Include="app\Slider\slider.component.js.map" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
     <None Include="packages.config" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
+    <Content Include="typings\globals\core-js\typings.json" />
+    <Content Include="typings\globals\node\typings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,11 +178,29 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\Album\album.component.ts" />
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\Menu\Menu.Component.ts" />
+    <TypeScriptCompile Include="app\Navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="app\Shared\Albums\Album.ts" />
+    <TypeScriptCompile Include="app\Shared\Albums\Albums.service.ts" />
+    <TypeScriptCompile Include="app\Slider\slider.component.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

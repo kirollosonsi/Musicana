@@ -1,0 +1,17 @@
+<navbar-musicana></navbar-musicana>
+
+<menu-musicana></menu-musicana>
+
+<div class="container">
+    <slider-musicana></slider-musicana>
+    <div class="row">
+        <album-musicana *ngFor="let item of albums" [album]="item"></album-musicana>
+        <!-- <album-musicana *ngFor="let item of albumsHttp" [albumHttp]="item"></album-musicana> -->
+    </div>
+
+</div>
+
+
+<div class="container-fluid">
+    <p>&copy; K-Systems {{today | date:"yyyy"}}</p>
+</div>
