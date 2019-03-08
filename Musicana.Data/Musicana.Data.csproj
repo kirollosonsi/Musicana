@@ -59,15 +59,23 @@
     <Compile Include="Core\Domain\Order.cs" />
     <Compile Include="Core\Domain\OrderDetail.cs" />
     <Compile Include="Core\Domain\Song.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Core\Repositories\IAlbumRepository.cs" />
+    <Compile Include="Core\Repositories\IArtistSongRepository.cs" />
+    <Compile Include="Core\Repositories\IArtsistRepository.cs" />
+    <Compile Include="Core\Repositories\IAuthorRepository.cs" />
+    <Compile Include="Core\Repositories\IGenreRepository.cs" />
+    <Compile Include="Core\Repositories\IOrderDetailRepository.cs" />
+    <Compile Include="Core\Repositories\IOrderRepository.cs" />
     <Compile Include="Core\Repositories\IRepository.cs" />
+    <Compile Include="Core\Repositories\ISongRepository.cs" />
+    <Compile Include="Persistance\Repositories\Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistance\Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

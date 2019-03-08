@@ -9,9 +9,9 @@ namespace Musicana.Data.Core.Repositories
     public interface IRepository<T>
     {
         IEnumerable<T> GetAll();
-        T GetById(int id);
+        T GetById(params object[] id);
         T Add(T entity);
         T Update(T entity);
-        bool Delete(int id);
+        bool Delete(params object[] id);
     }
 }
